@@ -1,0 +1,28 @@
+{
+  "name": "fc64js-typescript-starter",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint-style": "eslint . --ext .ts",
+    "lint-format": "prettier --config .prettierrc './src/**/*.ts' --write",
+    "lint": "npm run lint-style && npm run lint-format",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "cd dist && browser-sync start --server --directory --files \"*\"",
+    "build-and-preview": "npm run build && npm run preview"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
