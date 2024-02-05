@@ -1,24 +1,34 @@
-import './style.css';
-import typescriptLogo from './typescript.svg';
-import viteLogo from '/vite.svg';
-import { setupCounter } from './counter';
+import 'fc64js';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`;
+fc64Init(romInit, romLoop);
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
+let x = 60;
+let y = 60;
+let color = 4;
+
+function romInit() {
+  drawPixel(3, 3, COL_WHT);
+}
+
+function romLoop() {
+  if (isJustPressed(BTN_A) && color > 1) {
+    color--;
+  }
+  if (isJustReleased(BTN_B) && color < 6) {
+    color++;
+  }
+  drawPixel(x, y, COL_BLK);
+  if (isPressed(BTN_U) && y > 0) {
+    y--;
+  }
+  if (isPressed(BTN_D) && y < GFX_H - 1) {
+    y++;
+  }
+  if (isPressed(BTN_L) && x > 0) {
+    x--;
+  }
+  if (isPressed(BTN_R) && x < GFX_W - 1) {
+    x++;
+  }
+  drawPixel(x, y, color);
+}
