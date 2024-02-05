@@ -4,7 +4,9 @@ A quick start template project for creating [fc64js](https://github.com/TheInvad
 
 It includes [typescript](https://www.npmjs.com/package/typescript), [vite](https://www.npmjs.com/package/vite), [eslint](https://www.npmjs.com/package/eslint), [prettier](https://www.npmjs.com/package/prettier), [browser-sync](https://www.npmjs.com/package/browser-sync), and [fc64js](https://www.npmjs.com/package/fc64js) dependencies, and comes preconfigured with convenient scripts for linting, previewing, and building
 
-You will need [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed locally. It is recommended that you also have [git](https://github.com/git-guides/install-git), [vscode](https://code.visualstudio.com/download), and [chrome](https://www.google.com/chrome) installed.
+You will need [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed locally
+
+It is recommended that you also have [git](https://github.com/git-guides/install-git), [vscode](https://code.visualstudio.com/download), and [chrome](https://www.google.com/chrome) installed
 
 ## Example
 
