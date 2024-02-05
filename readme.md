@@ -24,7 +24,7 @@ rm -rf dist
 grep -r "fc64js-typescript-starter" .
 ```
 
-Use your preferred text editor or IDE to change all instances of "fc64js-typescript-starter" to the new project name (e.g. "fc64js-typescript-basic-example")
+Use your preferred text editor or IDE to change all instances of "fc64js-typescript-starter" to the new project name (e.g. "fc64js-typescript-basic-example"), and to edit "readme.md" as appropriate
 
 Install the dependencies:
 
