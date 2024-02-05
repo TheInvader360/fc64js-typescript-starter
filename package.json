@@ -9,7 +9,7 @@
     "lint-format": "prettier --config .prettierrc './src/**/*.ts' --write",
     "lint": "npm run lint-style && npm run lint-format",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base='./'",
     "preview": "cd dist && browser-sync start --server --directory --files \"*\"",
     "build-and-preview": "npm run build && npm run preview"
   },
