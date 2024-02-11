@@ -3,6 +3,9 @@ import { imgLogo, imgU0, imgU1, imgU2, imgD0, imgD1, imgD2, imgL0, imgL1, imgL2,
 
 fc64Init(romInit, romLoop);
 
+//const romPalette = [0x000000, 0x55415f, 0x646964, 0xd77355, 0x508cd7, 0x64b964, 0xe6c86e, 0xdcf5ff]; // db8
+//fc64Init(romInit, romLoop, romPalette);
+
 class Logo {
   x: number;
   y: number;
